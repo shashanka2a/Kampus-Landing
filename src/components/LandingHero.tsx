@@ -1,7 +1,7 @@
+"use client";
+
 import { BookOpen, Car, Home, Calendar, Plus } from 'lucide-react';
 import { Button } from './ui/button';
-
-"use client";
 
 export function LandingHero() {
   return (

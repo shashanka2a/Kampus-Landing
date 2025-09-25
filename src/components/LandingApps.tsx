@@ -1,6 +1,6 @@
-import { ShoppingCart, Car, Home, Users } from 'lucide-react';
-
 "use client";
+
+import { ShoppingCart, Car, Home, Users } from 'lucide-react';
 
 export function LandingApps() {
   return (

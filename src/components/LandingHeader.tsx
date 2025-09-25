@@ -1,7 +1,7 @@
+"use client";
+
 import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
-
-"use client";
 
 export function LandingHeader() {
   return (

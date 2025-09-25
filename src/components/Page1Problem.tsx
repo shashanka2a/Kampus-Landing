@@ -70,16 +70,16 @@ export function Page1Problem() {
           {/* Floating chat bubbles overlay */}
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-4 right-4 bg-green-500 text-white p-2 rounded-lg text-sm max-w-32 shadow-lg">
-              "Anyone know about housing?"
+              &quot;Anyone know about housing?&quot;
             </div>
             <div className="absolute top-20 left-4 bg-blue-500 text-white p-2 rounded-lg text-sm max-w-36 shadow-lg">
-              "Did you see the event flyer?"
+              &quot;Did you see the event flyer?&quot;
             </div>
             <div className="absolute bottom-20 right-8 bg-purple-500 text-white p-2 rounded-lg text-sm max-w-28 shadow-lg">
-              "Need a ride to..."
+              &quot;Need a ride to...&quot;
             </div>
             <div className="absolute bottom-4 left-6 bg-red-500 text-white p-2 rounded-lg text-sm max-w-32 shadow-lg">
-              "Lost in the chaos!"
+              &quot;Lost in the chaos!&quot;
             </div>
           </div>
         </div>
