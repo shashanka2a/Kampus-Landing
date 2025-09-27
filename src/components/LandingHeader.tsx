@@ -10,9 +10,11 @@ export function LandingHeader() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-green-600 to-violet-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">K</span>
-            </div>
+            <img 
+              src="/image.png" 
+              alt="Kampus Logo" 
+              className="w-8 h-8 object-contain"
+            />
             <span className="font-bold text-xl text-gray-900">Kampus</span>
           </div>
           

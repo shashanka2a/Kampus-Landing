@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Kampus | Your Campus, Simplified",
   description:
     "Kampus.fun – Student marketplace for textbooks, furniture, rides, housing, and events.",
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/image.png" },
   keywords: [
     "Kampus",
     "student marketplace",
