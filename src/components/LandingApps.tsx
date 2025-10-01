@@ -32,6 +32,7 @@ export function LandingApps() {
       title: "GatorEx",
       description: "Sell textbooks in seconds",
       features: ["Instant listings", "Smart pricing", "Secure payments"],
+      link: "http://gatorex.shop/",
       delay: "0.1s"
     },
     {
@@ -41,6 +42,7 @@ export function LandingApps() {
       title: "Rydify",
       description: "Split ride costs effortlessly",
       features: ["Cost splitting", "Route optimization", "Safety features"],
+      link: "http://rydify.co/",
       delay: "0.2s"
     },
     {
@@ -50,6 +52,7 @@ export function LandingApps() {
       title: "Vybr",
       description: "Discover your dream housing",
       features: ["Verified listings", "Virtual tours", "Roommate matching"],
+      link: "https://www.vybr.club/",
       delay: "0.3s"
     },
     {
@@ -59,6 +62,7 @@ export function LandingApps() {
       title: "Tribzy",
       description: "Never miss campus events",
       features: ["Event discovery", "RSVP tracking", "Social features"],
+      link: "https://tribzy.com/",
       delay: "0.4s"
     }
   ];
@@ -88,9 +92,12 @@ export function LandingApps() {
           {/* App Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {apps.map((app, index) => (
-              <div 
+              <a 
                 key={index}
-                className={`bg-white p-8 rounded-2xl shadow-xl border ${app.borderColor} hover:shadow-2xl transition-all duration-500 hover:scale-105 group cursor-pointer relative overflow-hidden ${
+                href={app.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`bg-white p-8 rounded-2xl shadow-xl border ${app.borderColor} hover:shadow-2xl transition-all duration-500 hover:scale-105 group cursor-pointer relative overflow-hidden block ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ 
@@ -137,7 +144,7 @@ export function LandingApps() {
                 
                 {/* Hover border effect */}
                 <div className={`absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-gradient-to-r group-hover:from-green-500 group-hover:to-violet-500 transition-all duration-300`}></div>
-              </div>
+              </a>
             ))}
           </div>
           
@@ -148,14 +155,17 @@ export function LandingApps() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               {apps.map((app, index) => (
-                <div 
+                <a 
                   key={index}
+                  href={app.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-4 py-2 bg-white rounded-full shadow-md border border-gray-200 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer group"
                 >
                   <span className="text-sm font-medium text-gray-700 group-hover:text-green-600 transition-colors duration-300">
                     {app.title}
                   </span>
-                </div>
+                </a>
               ))}
             </div>
           </div>
