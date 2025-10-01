@@ -124,18 +124,18 @@ export function LandingApps() {
                   </p>
                   
                   {/* Features list */}
-                  <div className="space-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  <div className="space-y-2">
                     {app.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm text-gray-500">
-                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-green-500 to-violet-500 rounded-full mr-2"></div>
+                      <div key={featureIndex} className="flex items-center text-sm text-gray-500 group-hover:text-gray-700 transition-colors duration-300">
+                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-green-500 to-violet-500 rounded-full mr-2 group-hover:scale-110 transition-transform duration-300"></div>
                         {feature}
                       </div>
                     ))}
                   </div>
                   
                   {/* Learn more link */}
-                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    <div className="flex items-center text-sm text-green-600 font-medium group-hover:text-green-700">
+                  <div className="mt-4">
+                    <div className="flex items-center text-sm text-green-600 font-medium group-hover:text-green-700 transition-colors duration-300">
                       Learn more
                       <ArrowRight className="h-4 w-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
                     </div>
