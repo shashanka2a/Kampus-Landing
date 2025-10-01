@@ -102,14 +102,21 @@ export function LandingHero() {
           
           {/* CTA Button */}
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.5s' }}>
-            <Button 
-              size="lg"
-              className="bg-gradient-to-r from-green-600 to-violet-600 hover:from-green-700 hover:to-violet-700 text-white px-8 py-4 text-lg rounded-xl shadow-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 relative overflow-hidden group"
+            <a 
+              href="https://gatorex.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Plus className="h-5 w-5 mr-2 transition-transform duration-300 group-hover:rotate-90" />
-              <span className="relative z-10">Post a Listing</span>
-            </Button>
+              <Button 
+                size="lg"
+                className="bg-gradient-to-r from-green-600 to-violet-600 hover:from-green-700 hover:to-violet-700 text-white px-8 py-4 text-lg rounded-xl shadow-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 relative overflow-hidden group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <Plus className="h-5 w-5 mr-2 transition-transform duration-300 group-hover:rotate-90" />
+                <span className="relative z-10">Post a Listing</span>
+              </Button>
+            </a>
           </div>
           
           {/* Stats */}
