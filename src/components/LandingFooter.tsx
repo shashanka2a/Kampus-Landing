@@ -58,8 +58,13 @@ export function LandingFooter() {
           {/* Brand */}
           <div className={`space-y-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex items-center gap-2 group cursor-pointer">
-              <div className="w-8 h-8 bg-gradient-to-r from-green-600 to-violet-600 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
-                <span className="text-white font-bold text-sm">K</span>
+              <div className="relative">
+                <img 
+                  src="/kampus.png" 
+                  alt="Kampus Logo" 
+                  className="w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-violet-600 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-sm"></div>
               </div>
               <span className="font-bold text-xl group-hover:text-green-400 transition-colors duration-300">Kampus</span>
             </div>

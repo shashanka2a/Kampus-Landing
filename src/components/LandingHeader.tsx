@@ -35,11 +35,11 @@ export function LandingHeader() {
           {/* Logo */}
           <div className="flex items-center gap-2 group cursor-pointer">
             <div className="relative">
-              <img 
-                src="/image.png" 
-                alt="Kampus Logo" 
-                className="w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
-              />
+            <img 
+              src="/kampus.png" 
+              alt="Kampus Logo" 
+              className="w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
+            />
               <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-violet-600 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-sm"></div>
             </div>
             <span className="font-bold text-xl text-gray-900 transition-colors duration-300 group-hover:text-green-600">
