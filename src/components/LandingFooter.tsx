@@ -2,6 +2,7 @@
 
 import { Heart, Mail, MessageCircle, ExternalLink } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export function LandingFooter() {
   const [isVisible, setIsVisible] = useState(false);
@@ -59,9 +60,11 @@ export function LandingFooter() {
           <div className={`space-y-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex items-center gap-2 group cursor-pointer">
               <div className="relative">
-                <img 
+                <Image 
                   src="/kampus.png" 
                   alt="Kampus Logo" 
+                  width={32}
+                  height={32}
                   className="w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-violet-600 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-sm"></div>
